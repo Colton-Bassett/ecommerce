@@ -6,8 +6,10 @@ TBD
 
 -   [x] Setup environment
 -   [x] Setup initial database and schema
--   [ ] Finish Prisma setup
--   [ ] Add Admin Dashboard
+-   [x] Finish Prisma setup
+-   [x] Add Admin Dashboard
+-   [x] Add Admin Products
+-   [ ] Add Admin Authentication
 
 ## Scripts
 
