@@ -12,6 +12,7 @@ import { Product } from "@prisma/client";
 import Image from "next/image";
 
 export function ProductForm({ product }: { product?: Product | null }) {
+	// validation error
 	const [error, action] = useActionState(
 		product == null ? addProduct : updateProduct.bind(null, product.id),
 		{}

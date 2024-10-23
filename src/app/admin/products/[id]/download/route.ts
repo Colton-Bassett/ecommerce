@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs/promises";
 
+// download the file
 export async function GET(
 	req: NextRequest,
 	{ params: { id } }: { params: { id: string } }
