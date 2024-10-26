@@ -10,7 +10,8 @@ TBD
 -   [x] Add Admin Dashboard
 -   [x] Add Admin Products
 -   [x] Add Admin Authentication
--   [ ]
+-   [x] Add Basic Caching of data
+-   [x] Add Stripe
 
 ## Scripts
 
