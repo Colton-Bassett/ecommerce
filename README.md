@@ -9,7 +9,8 @@ TBD
 -   [x] Finish Prisma setup
 -   [x] Add Admin Dashboard
 -   [x] Add Admin Products
--   [ ] Add Admin Authentication
+-   [x] Add Admin Authentication
+-   [ ]
 
 ## Scripts
 
