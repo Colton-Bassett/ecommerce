@@ -51,7 +51,11 @@ export default async function SuccessPage({
 					</div>
 					<Button className="mt-4" size="lg">
 						{isSuccess ? (
-							<a>Go</a>
+							<a
+								href={`/products/download/${await createDownloadVerification(product.id)}`}
+							>
+								Download
+							</a>
 						) : (
 							<Link href={`/products/${product.id}/purchase`}>
 								Try Again
@@ -62,4 +66,16 @@ export default async function SuccessPage({
 			</div>
 		</div>
 	);
+}
+
+async function createDownloadVerification(productId: string) {
+	// 1 day in milliseconds
+	return (
+		await db.downloadVerification.create({
+			data: {
+				productId,
+				expiresAt: new Date(Date.now() + 1000 * 60 * 60 * 24),
+			},
+		})
+	).id;
 }
