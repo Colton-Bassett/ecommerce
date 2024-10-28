@@ -33,6 +33,12 @@ pnpm prisma generate
 
 pnpm prisma db seed
 # create default puzzle data
+
+stripe listen --forward-to localhost:3000/webhooks/stripe
+# stripe listen to local webhooks e.g., stripe trigger payment_intent.succeeded
 ```
 
 ## Dev Notes
+
+stripe dashboard: cb
+localhost admin login: admin, password
