@@ -48,6 +48,8 @@ export async function POST(req: NextRequest) {
 		});
 
 		// send email
+		console.log(order);
+		console.log(downloadVerification);
 	}
 	return new NextResponse();
 }

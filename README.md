@@ -1,6 +1,6 @@
 # Ecommerce App "Ecommerce"
 
-TBD
+Nextjs, Nextjs caching, Prisma, Stripe, Shadcn,
 
 ## Todo
 
@@ -11,7 +11,12 @@ TBD
 -   [x] Add Admin Products
 -   [x] Add Admin Authentication
 -   [x] Add Basic Caching of data
--   [x] Add Stripe
+-   [x] Add Customer Home, Products pages
+-   [x] Add Customer Purchase page
+-   [x] Add Stripe, Stripe Webhooks
+-   [x] Add Admin Customers Page
+-   [x] Add Admin Sales Page
+-   [x] Add Customer Order History page
 
 ## Scripts
 
@@ -41,4 +46,5 @@ stripe listen --forward-to localhost:3000/webhooks/stripe
 ## Dev Notes
 
 stripe dashboard: cb
-localhost admin login: admin, password
+http://localhost:3000/admin
+login: admin, password
